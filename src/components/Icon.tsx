@@ -1,0 +1,61 @@
+import {
+  Activity,
+  Award,
+  Briefcase,
+  Calendar,
+  ClipboardList,
+  Code2,
+  Compass,
+  Container,
+  Database,
+  FileText,
+  GitBranch,
+  GraduationCap,
+  Hash,
+  KanbanSquare,
+  Layers,
+  Link2,
+  MessagesSquare,
+  Presentation,
+  RefreshCw,
+  Search,
+  Table2,
+  Target,
+  Type,
+  Users,
+  type LucideIcon,
+  type LucideProps,
+} from 'lucide-react';
+import type { IconName } from '../content/types';
+
+const map: Record<IconName, LucideIcon> = {
+  briefcase: Briefcase,
+  users: Users,
+  clipboard: ClipboardList,
+  search: Search,
+  calendar: Calendar,
+  message: MessagesSquare,
+  activity: Activity,
+  file: FileText,
+  git: GitBranch,
+  container: Container,
+  layers: Layers,
+  code: Code2,
+  table: Table2,
+  presentation: Presentation,
+  type: Type,
+  kanban: KanbanSquare,
+  slack: Hash,
+  compass: Compass,
+  target: Target,
+  refresh: RefreshCw,
+  graduation: GraduationCap,
+  award: Award,
+  database: Database,
+  link: Link2,
+};
+
+export function Icon({ name, ...props }: { name: IconName } & LucideProps) {
+  const C = map[name] ?? Briefcase;
+  return <C aria-hidden="true" {...props} />;
+}

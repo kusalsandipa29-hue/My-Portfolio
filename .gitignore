@@ -1,0 +1,39 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+dist-ssr/
+*.tsbuildinfo
+
+# Caches
+.vite/
+.cache/
+.eslintcache
+coverage/
+
+# Environment files (keep only the example)
+.env
+.env.*
+!.env.example
+
+# Hosting CLIs
+.vercel/
+.netlify/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Editors & OS
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.history/
+*.swp
+.DS_Store
+Thumbs.db
+desktop.ini
