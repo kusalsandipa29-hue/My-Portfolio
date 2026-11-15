@@ -7,7 +7,7 @@ import type { SocialLink } from './types';
  */
 export const site = {
   /** Your public URL once deployed (no trailing slash). Used for SEO, sitemap and social previews. */
-  siteUrl: 'https://kusal-sandipa.vercel.app',
+  siteUrl: 'https://kusal-sandipa-portfolio.vercel.app',
 
   seoTitle: 'Kusal Sandipa | Software Project Management Portfolio',
   seoDescription:
