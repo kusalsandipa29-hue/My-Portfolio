@@ -28,12 +28,14 @@ export function HeroVisual() {
         initial={{ opacity: 0, y: 16 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.15 }}
-        className="card relative z-10 flex items-center gap-4 p-4 sm:p-5"
+        className="card relative z-10 flex items-center gap-4 p-3 sm:gap-5 sm:p-4"
       >
-        <ProfilePhoto size="sm" className="sm:h-20 sm:w-20 sm:text-xl" />
+        <ProfilePhoto size="portrait" />
         <div className="min-w-0 flex-1">
-          <p className="truncate font-display text-lg font-bold text-ink">{profile.displayName}</p>
-          <p className="mt-0.5 flex items-center gap-1.5 text-sm text-muted">
+          <StatusPill status="Current" className="mb-3" />
+          <p className="font-display text-lg font-bold leading-tight text-ink sm:text-xl">{profile.displayName}</p>
+          <p className="mt-1 text-sm font-medium text-accent-text">Project Management Intern</p>
+          <p className="mt-3 flex items-center gap-1.5 text-sm text-muted">
             <Building2 className="h-3.5 w-3.5 shrink-0" aria-hidden="true" />
             <span className="truncate">Sri Lanka Telecom</span>
           </p>
@@ -42,7 +44,6 @@ export function HeroVisual() {
             {profile.location}
           </p>
         </div>
-        <StatusPill status="Current" className="hidden self-start sm:inline-flex" />
       </motion.div>
 
       {/* Plan board (illustrative) */}

@@ -24,7 +24,10 @@ export const site = {
    * Path to your professional photo inside /public, e.g. '/images/profile.jpg'.
    * Leave as null to show the KS monogram placeholder.
    */
-  photo: null as string | null,
+  photo: '/images/kusal-sandipa-profile.webp' as string | null,
+  /** Optional 2× version of the photo for high-density screens (same crop). */
+  photo2x: '/images/kusal-sandipa-profile@2x.webp' as string | null,
+  photoAlt: 'Kusal Sandipa — Software Project Management',
 
   /**
    * Privacy: phone number is hidden on the public site until you set this to true.
